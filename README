@@ -1,0 +1,31 @@
+Gitiles Gerrit Plugin
+==========================================
+
+This is a Gerrit plugin for running Gitiles, Google's simple gitweb browser,
+alongside a Gerrit server.
+
+
+BUILDING
+
+Gitiles plugin requires Maven (http://maven.apache.org/) to build:
+    sudo apt-get install maven
+
+The plugin is intended to be built within the Gerrit source repository.
+I have successfully compiled against the stable-2.7 branch of the Gerrit
+repository available here:
+    git clone https://gerrit.googlesource.com/gerrit
+
+Put this repository in the "plugins" directory under the gerrit source
+tree, copy the gitiles servlet jar file into:
+    plugins/gitiles/lib/gitiles-servlet-1.0-SNAPSHOT.jar
+then compile with Maven.
+
+    git clone https://gerrit.googlesource.com/gerrit
+    cd gerrit
+    mkdir plugins
+    cd plugins
+    git clone https://github.com/afrojer/gitiles_plugin.git gitiles
+    cd gitiles
+    mkdir lib
+    cp ${PATH_TO_GITILES_SERVLET}/gitiles-servlet/target/gitiles-servlet-1.0-SNAPSHOT.jar lib/
+    mvn compile
