@@ -134,7 +134,8 @@ limitations under the License.
       <groupId>com.google.gitiles</groupId>
       <artifactId>gitiles-servlet</artifactId>
       <version>${gitilesVersion}</version>
-      <scope>compile</scope>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/gitiles-servlet-1.0-SNAPSHOT.jar</systemPath>
     </dependency>
 
     <dependency>
