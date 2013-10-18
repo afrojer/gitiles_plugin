@@ -29,7 +29,7 @@ import com.google.gerrit.server.project.ProjectControl;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 
-import org.eclipse.jgit.internal.storage.file.ReflogReader;
+import org.eclipse.jgit.lib.ReflogReader;
 import org.eclipse.jgit.lib.ObjectDatabase;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.RefDatabase;
